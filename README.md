@@ -1,8 +1,8 @@
-# KeypayApi
+# KeyPay API
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/keypay_api`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is a Ruby gem client for accessing the [KeyPay](https://www.keypay.com.au) API, specifically developed for use in the Australian version of the API.
 
-TODO: Delete this and the text above, and describe your gem
+Documentation for the KeyPay API can be found at [https://api.keypay.com.au/australia/reference]
 
 ## Installation
 
@@ -22,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+First, initialise a client using your API key
+
+```ruby
+client = KeyPayAPI::Client.new("API_TOKEN")
+```
+
+Then call the relevant method
+
+```ruby
+client.list_businesses
+```
 
 ## Development
 
@@ -32,7 +42,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/keypay_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/keypay_api/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/mattman/keypay_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/mattman/keypay_api/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -40,4 +50,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the KeypayApi project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/keypay_api/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the KeypayApi project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/mattman/keypay_api/blob/master/CODE_OF_CONDUCT.md).
