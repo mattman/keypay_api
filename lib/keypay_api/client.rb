@@ -16,7 +16,7 @@ module KeyPayAPI
 
     def initialize(api_key = nil)
       api_key ||= ENV["KEYPAY_API_KEY"]
-      raise KeypayApi::Error('Must pass an API key') if api_key.nil?
+      raise KeyPayAPI::Error('Must pass an API key') if api_key.nil?
       enc_key = Base64.encode64(api_key + ':').gsub(/\n/,'')
       self.class.default_options.merge!(headers: {'Authorization': "Basic #{enc_key}", 'Content-Type': 'application/json'}, debug_output: STDOUT)
     end

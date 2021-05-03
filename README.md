@@ -2,7 +2,7 @@
 
 This is a Ruby gem client for accessing the [KeyPay](https://www.keypay.com.au) API, specifically developed for use in the Australian version of the API.
 
-Documentation for the KeyPay API can be found at [https://api.keypay.com.au/australia/reference]
+Documentation for the KeyPay API can be found at https://api.keypay.com.au/australia/reference
 
 ## Installation
 
@@ -25,13 +25,28 @@ Or install it yourself as:
 First, initialise a client using your API key
 
 ```ruby
-client = KeyPayAPI::Client.new("API_TOKEN")
+client = KeyPayAPI::Client.new("KEYPAY_API_TOKEN")
+```
+
+or, you can set an environment variable `ENV['KEYPAY_API_TOKEN']`, in whih case initialise as follows
+
+```ruby
+client = KeyPayAPI::Client.new
 ```
 
 Then call the relevant method
 
 ```ruby
 client.list_businesses
+```
+
+### List of available methods
+```ruby
+client.list_businesses
+client.list_employees
+client.show_employee(businessId, employeeId)
+client.create_employee(businessId, options)
+client.onboard_employee(businessId, options)
 ```
 
 ## Development
