@@ -9,9 +9,13 @@ module KeyPayAPI
         get("business/employee")
       end
 
-      def show_employee(businessId, employeeId)
+      def get_employee(businessId, employeeId)
         get("/business/#{businessId}/employee/unstructured/#{employeeId}")
       end
+      
+      def get_employee_external_id(businessId, externalId)
+        get("/business/#{businessId}/employee/unstructured/externalid/#{externalId}")
+      end      
 
       def create_employee(businessId,  options)
         post("/business/#{businessId}/employee/unstructured", options.to_json)
