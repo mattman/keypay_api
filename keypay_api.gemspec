@@ -6,14 +6,12 @@ Gem::Specification.new do |spec|
   spec.name          = "keypay_api"
   spec.version       = KeyPayAPI::VERSION
   spec.authors       = ["Matt Didcoe"]
-  spec.email         = ["matt@didcoe.id.au"]
+  spec.email         = ["matt@mattdidcoe.com"]
 
   spec.summary       = "Client for the KeyPay (YourPayroll) API"
   spec.homepage      = "https://github.com/mattman/keypay_api"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
-
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/mattman/keypay_api"

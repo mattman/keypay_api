@@ -22,7 +22,6 @@ module KeyPayAPI
 
       def request(http_method, path, options)
         response = self.class.send(http_method, path, { body: options })
-        puts response
         raise KeyPayAPI::Error.new response.message if !response.success?
         data = response.parsed_response
         parse_data(data)
