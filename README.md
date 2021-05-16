@@ -1,6 +1,6 @@
 # KeyPay API
 
-This is a Ruby gem client for accessing the [KeyPay](https://www.keypay.com.au) API, specifically developed for use in the Australian version of the API.
+This is an unofficial Ruby gem client for accessing the [KeyPay](https://www.keypay.com.au) API, specifically developed for use in the Australian version of the API.
 
 Documentation for the KeyPay API can be found at https://api.keypay.com.au/australia/reference
 
